@@ -43,7 +43,7 @@ Tranined the Llama-2 model using parameter efficient finetunning algorithm calle
 ### Challanges Faced and Solved :
 - Previous state of the art translation models like [T5](https://huggingface.co/findnitai/t5-hinglish-translator) did not perform well on English to Hinglish translation even after fine-tunning on large datasets. So I decided to move forward with a advanced Large Language Model(LLM)  Llama-2 7 billion parameter variant.  
 
-- Trained the Llama-2 model on f[indnitai/english-to-hinglish](https://huggingface.co/datasets/findnitai/english-to-hinglish) dataset from huggingface using QLORA a parameter efficient fine tunning which helps to fine-tune LLMs without the fear of catastrophic forgetting (forget the knowledge learned during pre-training)
+- Trained the Llama-2 model on [findnitai/english-to-hinglish](https://huggingface.co/datasets/findnitai/english-to-hinglish) dataset from huggingface using QLORA a parameter efficient fine tunning which helps to fine-tune LLMs without the fear of catastrophic forgetting (forget the knowledge learned during pre-training)
 
 - Results from above fine-tunning was a major improvement from earlier models like T5 but outputs were still not upto mark (you can view this output in outputs.txt under huggingface dataset section).
 
