@@ -2,14 +2,19 @@
 Built an english to hinglish translator by fine-tunning Llama-2 LLM. The translated text sounds natural and also convert all the difficult words and phrases in English to Hinglish. The translated text is easy to understand for even a non-native Hindi speaker.
 
 ### Final Outputs:
->  English: Definitely share your feedback in the comment section.
- Hinglish: बिल्कुल, comment section में अपनी feedback साझा करें।
+ >English: Definitely share your feedback in the comment section.
+
+ >Hinglish: बिल्कुल, comment section में अपनी feedback साझा करें।
+ 
 
  >English: I was waiting for my bag.
- Hinglish: मैं अपनी bag का इंतजार कर रहा था।
+
+ >Hinglish: मैं अपनी bag का इंतजार कर रहा था।
+
 
  >English: Please like and subscribe my youtube channel.
- Hinglish: कृपया मेरे youtube channel को like और subscribe करें।
+
+ >Hinglish: कृपया मेरे youtube channel को like और subscribe करें।
 
 #####Results on some sample inputs are inside outputs.txt
 
@@ -52,5 +57,7 @@ Tranined the Llama-2 model using parameter efficient finetunning algorithm calle
 
 ####References:
 [Llama 2](https://huggingface.co/meta-llama/Llama-2-7b-hf)
+
 [LIMA paper (Less Is For More Aligment)](https://arxiv.org/abs/2305.11206)
+
 [QLORA parameter efficient finetunning](https://arxiv.org/abs/2305.14314)
