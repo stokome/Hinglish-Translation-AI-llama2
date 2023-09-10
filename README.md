@@ -20,7 +20,7 @@ Run the ipython notebook hinglish_translator_llama2.ipynb in google colab.
 
 There are two types of weights:
 - [Custom Weights](https://github.com/stokome/Hinglish-Translation-AI-llama2/tree/main/llama-2-7b-hinglish_weights/custom_dataset_weights):  weights after training on custom dataset (better results than huggingface weights).
-- [Huggingface Weights](https://github.com/stokome/Hinglish-Translation-AI-llama2/tree/main/llama-2-7b-hinglish_weights/huggingface_dataset_weights): weights after training on huggingface dataset: findnitai/english-to-hinglish
+- [Huggingface Weights](https://github.com/stokome/Hinglish-Translation-AI-llama2/tree/main/llama-2-7b-hinglish_weights/huggingface_dataset_weights): weights after training on huggingface dataset: [findnitai/english-to-hinglish](https://huggingface.co/datasets/findnitai/english-to-hinglish)
 
 ### Methodolgy:
 #### Dataset Generation:
