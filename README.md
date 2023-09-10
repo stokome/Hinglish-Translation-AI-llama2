@@ -37,17 +37,17 @@ Hinglish:  मुझे सिर्फ ३० minute का demo मिला �
 Dataset consist of 79 training examples created by repeating the above prompt. Here knowledge from the [LIMA paper](https://huggingface.co/meta-llama/Llama-2-7b-hf) is applied to generate dataset biased towards content creators as our use-case sample inputs are going to be biased towards them. 
 
 #### Training:
-Tranined the Llama-2 model using parameter efficient finetunning algorithm called QLORA which allows LLMs learn by adding an adapter between its layers and only change weights inside the adapters without touching weights in other layers. This allows pre-trained models to retain the knowledge gained during pre-training and apply the knowledge gained during finetunning.
+Tranined the Llama-2 model using parameter efficient finetunning algorithm called [QLORA](https://arxiv.org/abs/2305.14314) which allows LLMs learn by adding an adapter between its layers and only change weights inside the adapters without touching weights in other layers. This allows pre-trained models to retain the knowledge gained during pre-training and apply the knowledge gained during finetunning.
 
 
 ### Challanges Faced and Solved :
-- Previous state of the art translation models like T5 did not perform well on English to Hinglish translation even after fine-tunning on large datasets. So I decided to move forward with a advanced Large Language Model(LLM)  Llama-2 7 billion parameter variant.  
+- Previous state of the art translation models like [T5](https://huggingface.co/findnitai/t5-hinglish-translator) did not perform well on English to Hinglish translation even after fine-tunning on large datasets. So I decided to move forward with a advanced Large Language Model(LLM)  Llama-2 7 billion parameter variant.  
 
-- Trained the Llama-2 model on findnitai/english-to-hinglish dataset from hugging using QLORA a parameter efficient fine tunning which helps to fine-tune LLMs without the fear of catastrophic forgetting (forget the knowledge learned during pre-training)
+- Trained the Llama-2 model on f[indnitai/english-to-hinglish](https://huggingface.co/datasets/findnitai/english-to-hinglish) dataset from huggingface using QLORA a parameter efficient fine tunning which helps to fine-tune LLMs without the fear of catastrophic forgetting (forget the knowledge learned during pre-training)
 
 - Results from above fine-tunning was a major improvement from earlier models like T5 but outputs were still not upto mark (you can view this output in outputs.txt under huggingface dataset section).
 
-- To further improve the outputs of the translation, applied the LIMA paper according to which fine tunning on small amount of  well curated training examples can outperform finetunning on large amount of data for a specific use-case. So created a custom dataset of ~75 training examples biased around content creators.
+- To further improve the outputs of the translation, applied the LIMA paper according to which fine tunning on small amount of  well curated training examples can outperform finetunning on large amount of data for a specific use-case. So created a custom dataset of 79 training examples biased around content creators.
 
 - Finetuning on the custom dataset resulted in the model to give highly accurate hinglish translations for english text biased towards content creators.
 
