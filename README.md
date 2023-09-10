@@ -13,14 +13,14 @@ Built an english to hinglish translator by fine-tunning Llama-2 LLM. The transla
  >English: Please like and subscribe my youtube channel.<br />
  >Hinglish: कृपया मेरे youtube channel को like और subscribe करें।
 
-#####Results on some sample inputs are inside outputs.txt
+##### Results on some sample inputs are inside [outputs.txt](https://github.com/stokome/Hinglish-Translation-AI-llama2/blob/main/output.txt)
 
 ### How to use the model:
 Run the ipython notebook hinglish_translator_llama2.ipynb in google colab.
 
 There are two types of weights:
-- Custom Weights:  weights after training on custom dataset (better results than huggingface weights).
-- Huggingface Weights: weights after training on huggingface dataset: findnitai/english-to-hinglish
+- [Custom Weights](https://github.com/stokome/Hinglish-Translation-AI-llama2/tree/main/llama-2-7b-hinglish_weights/custom_dataset_weights):  weights after training on custom dataset (better results than huggingface weights).
+- [Huggingface Weights](https://github.com/stokome/Hinglish-Translation-AI-llama2/tree/main/llama-2-7b-hinglish_weights/huggingface_dataset_weights): weights after training on huggingface dataset: findnitai/english-to-hinglish
 
 ### Methodolgy:
 #### Dataset Generation:
@@ -34,7 +34,7 @@ Hinglish:  मुझे सिर्फ ३० minute का demo मिला �
 \###
 >Generate a dataset of 5 examples for English to Hinglish translation where Hindi words should be in Devanagari and English words should be in English. Use the above example as a reference. Create examples biased towards content creators.
 
-Dataset consist of 79 training examples created by repeating the above prompt. Here knowledge from the LIMA paper is applied to generate dataset biased towards content creators as our use-case sample inputs are going to be biased towards them. 
+Dataset consist of 79 training examples created by repeating the above prompt. Here knowledge from the [LIMA paper](https://huggingface.co/meta-llama/Llama-2-7b-hf) is applied to generate dataset biased towards content creators as our use-case sample inputs are going to be biased towards them. 
 
 #### Training:
 Tranined the Llama-2 model using parameter efficient finetunning algorithm called QLORA which allows LLMs learn by adding an adapter between its layers and only change weights inside the adapters without touching weights in other layers. This allows pre-trained models to retain the knowledge gained during pre-training and apply the knowledge gained during finetunning.
