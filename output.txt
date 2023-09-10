@@ -1,0 +1,53 @@
+LLAMA-2 Hinglish transaltion results on custom dataset(Generated with ChatGPT):
+
+ English: Definitely share your feedback in the comment section.
+ Hinglish: बिल्कुल, comment section में अपनी feedback साझा करें।
+
+ English: I was waiting for my bag.
+ Hinglish: मैं अपनी bag का इंतजार कर रहा था।
+
+ English: So even if it's a big video, I will clearly mention all the products.
+ Hinglish: हे बड़े video के बारे में सभी products को क्लेअर करने के लिए बेताब हो स।
+
+ English: My name is Yatharth Anand.
+ Hinglish: मेरा नाम Yatharth Anand है।
+
+ English: We are going to unbox new Iphone 20.
+ Hinglish: हम नए Iphone 20 के unboxing करने जा रहे हैं।
+
+ English: The sponsor of this video is Kurkure.
+ Hinglish: यह video के sponsor Kurkure है।
+
+ English: I am vlogging in the streets of Barcelone.
+ Hinglish: मैं बर्सलोन के सड़कों पर vlogging कर रहा हूँ।
+
+ English: Please like and subscribe my youtube channel.
+ Hinglish: कृपया मेरे youtube channel को like और subscribe करें।
+
+#####################################################################################################################################
+
+LLAMA-2 Hinglish transaltion results on huggingface dataset(findnitai/english-to-hinglish):
+
+ English: Definitely share your feedback in the comment section.
+ Hinglish:  Definitely share kare feedback comment section me.
+
+ English: I was waiting for my bag.
+ Hinglish:  Mere bag ko wait kar raha tha
+
+ English: So even if it's a big video, I will clearly mention all the products.
+ Hinglish:  So even if it's a big video, I will clearly mention all the products.
+
+ English: My name is Yatharth Anand.
+ Hinglish:  Mera naam Yatharth Anand hai.
+
+ English: We are going to unbox new Iphone 20.
+ Hinglish:  Hum unbox karne wale Iphone 20 hai.
+
+ English: The sponsor of this video is Kurkure.
+ Hinglish:  Kurkure ke sponsor this video hai.
+
+ English: I am vlogging in the streets of Barcelone.
+ Hinglish:  Mere pass Barcelone ke streets me vlogging hai .
+
+ English: Please like and subscribe my youtube channel.
+ Hinglish:  please mere youtube channel ko like aur subscribe kare .
